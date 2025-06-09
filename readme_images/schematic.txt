@@ -1,0 +1,45 @@
+                                     KEYBOARD CONTROLLER
+ GAMECUBE    ┌──────────────────┐    ────────────────────
+ PORT 1      │                  │    PURPLE (CONTROLLER PROTOCOL)
+┌──────────┐ │    ┌──────────┐  │   ┌──────────┐
+│          │ │    │          │  │   │          │
+│ 5V ────────┴─►|─► VSYS     │  └───► 5V       │
+│          │  (D2)│          │      │          │
+│ 3.3V ─────────────────────────────► 3.3V     │
+│          │      │          │      │          │
+│ GND(SIG)◄──────── PIN 3    ├─────── GND(SIG) │
+│          │      │          │      │          │
+│ GND(POW)◄──────── PIN 38   ├─────── GND(POW) │
+│          │      │          │      │          │
+│ DATA ◄──────────► GPIO 2   │      │          │
+│          │      │          │      │          │
+│          │      │ GPIO 3 ◄────────► DATA     │
+│          │      │   │      │      │          │
+└──────────┘      │   │      │      └──────────┘
+                  │  (R1)    │
+                  │   │      │       GREY (KEYBOARD PROTOCOL)
+                  │   │      │     ╎┌──────────┐
+                  │ 3.3V     │     ╎│          │
+                  │   |      │    ╎└► 5V       │
+                  │   │      │    ╎ │          │
+                  │  (R2)    │   ╎└─► 3.3V     │
+                  │   │      │   ╎  │          │
+                  │   │      │  ╎└─── GND(SIG) │
+                  │   │      │  ╎   │          │
+                  │   │      │  └──── GND(POW) │
+                  │   │      │      │          │
+                  │ GPIO 4 ◄─┼──────► DATA     │
+                  │          │      │          │
+                  └──────────┘      └──────────┘
+                   PI PICO W 
+
+Notes:
+───────────────────────────────────────────────────────────────────────────────
+- Pi mediates all communication between the keyboard controller and the GameCube
+- When communicating with the keyboard controller, Pi simulates a GameCube
+- When communicating with the GameCube, Pi simulates a standard controller
+- GameCube's 5V powers both controller plugs and (usually) the Pi Pico (via VSYS)
+- USB can be hot-plugged anytime for debugging
+- Built-in diode on Pico W (D1, not depicted) automatically handles power ORing between USB and GameCube 5V
+- Schottky Diode (D2) prevents USB 5v backfeeding to GameCube when USB is connected
+- GPIO4 and GPIO3 use 1kΩ pullups (R1, R2) connected to Pi's 3.3V

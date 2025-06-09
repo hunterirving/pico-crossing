@@ -60,7 +60,26 @@ It's more likely than you think.
 Usage: press the `S` key while a design (image or video) is being entered.
 
 ## Building the Hardware
-todo
+<img src="readme_images/schematic.png">
+<br>
+<br>
+
+You'll need:
+- a Raspberry Pi Pico (or Pi Pico W)
+- two GameCube controller extension cables
+- two 1k Ω resistors (1/4W or higher)
+- one 1N5817 Schottky diode (protects GameCube from USB 5V backfeeding during flashing/debugging)
+
+Assembly:
+1. Cut both extension cables and strip back the outer sleeve to reveal the 5 inner wires. You'll need two female plugs and one male plug.
+2. <b>Important:</b> Verify your extension cable pinouts before soldering! The colors in the provided schematic correspond to the "High Quality" labeled cables I used, but colors may vary between manufacturers or even batches.
+3. Solder the components to the Pi according to the schematic:
+   - Install the Schottky diode between the male plug's 5V line and the Pi's VSYS pin (cathode toward VSYS), then connect the 5V line from the male plug directly to the 5V lines on both of the female plugs.
+   - Install pullup resistors connecting the Pi's 3.3V supply to GPIO 3 and GPIO 4 on the Pi.
+   - Connect the 3.3V line from the male plug directly to the 3.3v lines on both of the female plugs (without connecting it to the Pi).
+   - Connect GND(POW) from the male plug to PIN 38 on the Pi and the GND(POW) lines on both of the female plugs.
+   - Connect GND(SIG) from the male plug to PIN 3 on the Pi and the GND(SIG) lines on both of the female plugs.
+   - Connect the DATA line from the male plug to GPIO 2 on the Pi. Connect the DATA lines from the female plugs to GPIO3 and GPIO4 on the Pi.
 
 ## Prerequisites
 
@@ -80,9 +99,6 @@ brew install picotool
 **Ubuntu/Debian:**
 ```bash
 sudo apt install picotool
-# Set up udev rules for Pico access
-echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000c", MODE="0666"' | sudo tee /etc/udev/rules.d/98-pico.rules
-sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
 ## Building the Software
@@ -94,7 +110,7 @@ For the fastest development cycle:
 ```bash
 ./buildflashmonitor.sh
 ```
-This script runs build → flash → monitor in sequence, great for testing changes.
+This script runs build → flash → monitor in sequence. Great for testing changes.
 
 ### Individual Build Scripts
 
