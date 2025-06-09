@@ -1,0 +1,7 @@
+build/
+image_tools/preview_gifs/
+*.mp4
+__pycache__/
+*.py[cod]
+*.CS_Store
+*.DS_Store
