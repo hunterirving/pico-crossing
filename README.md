@@ -61,8 +61,6 @@ Usage: press the `S` key while a design (image or video) is being entered.
 
 ## Building the Hardware
 <img src="readme_images/schematic.png">
-<br>
-<br>
 
 You'll need:
 - a Raspberry Pi Pico (or Pi Pico W)
