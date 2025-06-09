@@ -24,6 +24,8 @@ Or, at least.. it was. Not anymore.
 ## Custom Keycaps
 Compose digital diary entries in style with this set of 81 custom, 3D printed keycaps that map perfectly to Animal Crossing's in-game character set.
 
+See the separate <a href="https://github.com/hunterirving/pico-crossing-keycaps">pico-crossing-keycaps</a> repository for FreeCAD project files and OBJ exports.
+
 ## Infinite Playlist
 
 Cycle through your favorite Town Tunes without having to futz about with e-Reader cards.
