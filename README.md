@@ -75,7 +75,7 @@ Assembly:
 2. <b>Important:</b> Verify your extension cable pinouts before soldering! The colors in the provided schematic correspond to the "High Quality" labeled cables I used, but colors may vary between manufacturers or even batches.
 3. Solder the components to the Pi according to the schematic:
    - Install the Schottky diode between the male plug's 5V line and the Pi's VSYS pin (cathode toward VSYS), then connect the 5V line from the male plug directly to the 5V lines on both of the female plugs.
-   - Install pullup resistors connecting the Pi's 3.3V supply to GPIO 3 and GPIO 4 on the Pi.
+   - Install pull-up resistors connecting the Pi's 3.3V supply to GPIO 3 and GPIO 4 on the Pi.
    - Connect the 3.3V line from the male plug directly to the 3.3v lines on both of the female plugs (without connecting it to the Pi).
    - Connect GND(POW) from the male plug to PIN 38 on the Pi and the GND(POW) lines on both of the female plugs.
    - Connect GND(SIG) from the male plug to PIN 3 on the Pi and the GND(SIG) lines on both of the female plugs.
