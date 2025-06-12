@@ -18,6 +18,8 @@ Typing in Animal Crossing (GCN) is painfully slow.
 
 Or, at least.. it was. Not anymore.
 
+<img src="readme_images/hacking_clip1.gif" alt="Typing using the GameCube Keyboard Controller" width="400">
+
 <code>Pro Gamer WPM (unassisted): TBD</code><br>
 <code>Tool-assisted WPM: Also TBD</code>
 
@@ -28,15 +30,22 @@ See the separate <a href="https://github.com/hunterirving/pico-crossing-keycaps"
 
 ## Infinite Playlist
 
+<img src="readme_images/hacking_clip2.gif" alt="Inputting town tunes at TAS speed" width="400">
+
 Cycle through your favorite Town Tunes without having to futz about with e-Reader cards.
 
 ## All Items Unlocked
+
+<img src="readme_images/hacking_clip3.gif" alt="Automated entry of Nook Codes to recieve in-game items" width="400">
 
 Type the name of (almost) any item, and this little racoon-looking guy will give it to you for free.
 
 Usage: press `Shift` + `Alt` + `🗝️`, then type the name of any compatible item
 
 ## Put any Image in the Game
+
+<img src="readme_images/hacking_clip4.gif" alt="Inputting The Mona Lisa into Animal Crossing's pattern editor in ~3 minutes" width="400">
+
 Convert any image to display in Animal Crossing's pattern editor. The script automatically sets up a Python environment and handles all dependencies.
 
 **Basic usage:**
@@ -47,6 +56,9 @@ Convert any image to display in Animal Crossing's pattern editor. The script aut
 See `image_tools/README.md` for advanced usage.
 
 ## Put any Video in the Game (if you're patient)
+
+<img src="readme_images/hacking_clip5.gif" alt="You just got Rickrolled... in Animal Crossing" width="400">
+
 Convert videos to animated sequences in Animal Crossing (requires ffmpeg for video processing).
 
 **Basic usage:**
@@ -58,6 +70,8 @@ See `image_tools/README.md` for advanced usage.
 
 ## A Playable Version of Snake... in Animal Crossing!?
 It's more likely than you think.
+
+<img src="readme_images/hacking_clip6.gif" alt="Playing Snake in Animal Crossing's pattern editor" width="400">
 
 Usage: press the `S` key while a design (image or video) is being entered.
 
