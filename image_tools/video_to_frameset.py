@@ -405,7 +405,7 @@ def main():
                     print(f"Created animated GIF: {animated_gif_path}")
             
             # Path to design.hpp
-            design_hpp_path = os.path.join(args.project_dir, "design.hpp")
+            design_hpp_path = os.path.join(args.project_dir, "src", "design.hpp")
             
             # Update design.hpp with the generated frameset
             update_design_hpp(frames_data, design_hpp_path, input_filename)

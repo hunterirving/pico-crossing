@@ -419,7 +419,7 @@ def main():
 		gif_output = os.path.join(output_dir, output_filename)
 		
 		# Path to design.hpp
-		design_hpp_path = os.path.join(args.project_dir, "design.hpp")
+		design_hpp_path = os.path.join(args.project_dir, "src", "design.hpp")
 		
 		# Create the GIF for visual reference
 		create_gif(processed_image, palette_idx, gif_output)

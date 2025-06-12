@@ -129,7 +129,7 @@ fi
 
 # Run the conversion tool
 echo "Converting $INPUT_FILE to frameset..."
-python "$TOOL_DIR/video_to_frameset.py" "$INPUT_FILE" -o "$OUTPUT_NAME" $NODITHER $FPS $MAX_FRAMES $START_FRAME $STOP_FRAME $SEPARATE_FRAMES $PALETTE
+python "$TOOL_DIR/video_to_frameset.py" "$INPUT_FILE" -o "$OUTPUT_NAME" --project-dir "$SCRIPT_DIR" $NODITHER $FPS $MAX_FRAMES $START_FRAME $STOP_FRAME $SEPARATE_FRAMES $PALETTE
 
 # Check if conversion was successful
 if [ $? -eq 0 ]; then

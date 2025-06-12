@@ -38,7 +38,7 @@ Cycle through your favorite Town Tunes without having to futz about with e-Reade
 
 <img src="readme_images/hacking_clip3.gif" alt="Automated entry of Nook Codes to recieve in-game items" width="400">
 
-Type the name of (almost) any item, and this little racoon-looking guy will give it to you for free.
+Type the name of (almost) any item, and this little raccoon-looking guy will give it to you for free.
 
 Usage: press `Shift` + `Alt` + `🗝️`, then type the name of any compatible item
 
