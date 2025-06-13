@@ -20,8 +20,8 @@ Or, at least.. it was. Not anymore.
 
 <img src="readme_images/hacking_clip1.gif" alt="Typing using the GameCube Keyboard Controller" width="400">
 
-<code>Pro Gamer WPM (unassisted): TBD</code><br>
-<code>Tool-assisted WPM: Also TBD</code>
+<code>Pro Gamer WPM (unassisted): ~20</code><br>
+<code>Tool-assisted WPM: ~45</code>
 
 ## Custom Keycaps
 Compose digital diary entries in style with this set of 81 custom, 3D printed keycaps that map perfectly to Animal Crossing's in-game character set.
