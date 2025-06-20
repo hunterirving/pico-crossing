@@ -24,6 +24,9 @@ Or, at least.. it was. Not anymore.
 <code>Tool-assisted WPM: ~45</code>
 
 ## Custom Keycaps
+
+<img src="readme_images/hacking_clip7.gif" alt="Viewing custom keycaps in FreeCAD, printing them on a 3D printer, and displaying them on the ASCII GameCube Keyboard Controller" width="400">
+
 Compose digital diary entries in style with this set of 81 custom, 3D printed keycaps that map perfectly to Animal Crossing's in-game character set.
 
 See the separate <a href="https://github.com/hunterirving/pico-crossing-keycaps">pico-crossing-keycaps</a> repository for FreeCAD project files and OBJ exports.
