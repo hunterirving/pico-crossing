@@ -72,7 +72,7 @@ Convert videos to animated sequences in Animal Crossing (requires ffmpeg for vid
 See `image_tools/README.md` for advanced usage.
 
 ## A Playable Version of Snake... in Animal Crossing!?
-It's more likely than you think.
+It's more likely than you'd think.
 
 <img src="readme_images/hacking_clip6.gif" alt="Playing Snake in Animal Crossing's pattern editor" width="400">
 
