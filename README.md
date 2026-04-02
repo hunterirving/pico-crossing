@@ -66,10 +66,14 @@ Convert videos to animated sequences in Animal Crossing (requires ffmpeg for vid
 
 **Basic usage:**
 ```bash
-./convert_video.sh rickroll.mp4
+./convert_video.sh badapple.mp4
 ```
 
-See `image_tools/README.md` for advanced usage.
+A preview GIF is output on each run:
+
+<a href="https://www.youtube.com/watch?v=z8mqQaD0YkU"><img src="readme_images/bad_apple.gif" alt="Bad Apple!! preview GIF" width="256"></a>
+
+See <a href="image_tools/README.md">`image_tools/README.md`</a> for advanced usage.
 
 ## A Playable Version of Snake... in Animal Crossing!?
 It's more likely than you'd think.
